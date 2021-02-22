@@ -10,16 +10,18 @@ import {
     FlatList 
 } from 'react-native'
 import { COLORS , icons , images , SIZES , FONTS } from '../constants'
+import Geolocation from "react-native-geolocation-service"
 
 const Home = ({navigation}) => {
 
       // Dummy Datas
 
       const initialCurrentLocation = {
-        streetName: "Hassan Amin",
+        streetName: "not availaible",
         gps: {
             latitude: 31.252381,
-            longitude: 29.976423
+            longitude: 29.976423,
+            coordinates :[]
         }
     }
 
