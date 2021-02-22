@@ -17,7 +17,7 @@ const Home = ({navigation}) => {
       // Dummy Datas
 
       const initialCurrentLocation = {
-        streetName: "not availaible",
+        streetName: "client field",
         gps: {
             latitude: 31.252381,
             longitude: 29.976423,
@@ -94,6 +94,7 @@ const Home = ({navigation}) => {
             photo: images.burger_restaurant_1,
             duration: "30 - 45 min",
             location: {
+                RestaurantStreetName : "restaurant owner field",
                 latitude: 31.250006,
                 longitude: 29.975421,
             },
@@ -365,7 +366,7 @@ const Home = ({navigation}) => {
                     <View style={{
                         width:'70%',
                         height: '100%',
-                        backgroundColor : COLORS.lightGray3,
+                        backgroundColor : COLORS.white,
                         alignItems :'center',
                         justifyContent :'center',
                         borderRadius : SIZES.radius
@@ -589,7 +590,7 @@ const Home = ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: COLORS.white
+        backgroundColor: COLORS.lightGray3
     },
     shadow: {
         shadowColor: "#000",

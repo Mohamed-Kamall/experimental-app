@@ -346,7 +346,7 @@ const Restaurant = ({route,navigation}) => {
                                     tintColor: COLORS.darkgray
                                 }}
                             />
-                            <Text style={{ marginLeft: SIZES.padding, ...FONTS.h4 }}>Location</Text>
+                            <Text style={{ marginLeft: SIZES.padding, ...FONTS.h4 }}>{restaurants?.location.RestaurantStreetName}</Text>
                         </View>
 
                         <View style={{ flexDirection: 'row' }}>

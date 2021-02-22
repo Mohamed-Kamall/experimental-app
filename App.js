@@ -54,7 +54,7 @@ export default function App() {
       <AppLoading
         startAsync={getFont}
         onFinish={()=>setFontsloaded(true)}
-        onError = {console.log('failed to load')}
+        onError = {err=>console.error(err)}
       />
     )
 }
